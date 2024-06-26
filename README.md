@@ -64,7 +64,7 @@ Home folder open
 
 
 ### 5. At the top add the code below to automatically use the python interpreter.
-#!/usr/bin/python3
+```#!/usr/bin/python3```
 
 ![image](https://github.com/Kook1y/card_detection/assets/173178626/9a1c782e-6122-472b-82aa-5568f2fbcdc1)
 
