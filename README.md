@@ -1,5 +1,8 @@
 # Card Detection
 
+## Important Files to Download
+
+
 It detects different types of cards with their symbols and numbers. It is a classification model that classifies cards using resnet 18. 
 
 ![image](https://github.com/Kook1y/card_detection/assets/173178626/95462da2-328d-42fb-a1ed-005eab837f88)
