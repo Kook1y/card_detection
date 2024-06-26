@@ -187,7 +187,7 @@ The code runs and gives you the bottom line that says:  ```image is recognized a
 This tells you that the image was recognized successfully as a polar bear.
 
 ---
-## How to Re-Traing image classification Model
+## How to Re-Train Image classification Model
 ```## Lesson Materials
 ### Hardware Components
 
