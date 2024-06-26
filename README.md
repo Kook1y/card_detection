@@ -2,8 +2,8 @@
 
 It detects different types of cards with their symbols and numbers. It is a classification model that classifies cards using resnet 18. 
 
-![add image descrition here](![image](https://github.com/Kook1y/card_detection/assets/173178626/c7a92bc2-40ce-4f5f-a0b5-0fd2c243bc0c)
-)
+![image](https://github.com/Kook1y/card_detection/assets/173178626/95462da2-328d-42fb-a1ed-005eab837f88)
+
 
 ## What is a Jetson Nano
 The NVIDIA Jetson Nano is a compact, powerful AI computer designed for developers, learners, and hobbyists to create and deploy AI applications at the edge. Here are the key features and functionalities of the Jetson Nano:
