@@ -2,14 +2,29 @@
 
 ## Important Files to Download
 
+### Please download these files from Kaggle to follow the steps.
+- [Kaggle_Card_Detection](https://www.kaggle.com/datasets/tanavyedlapalli/card-detection-dataset-for-image-classification) 
 
+
+## Authors
+
+- [@Kook1y](https://github.com/Kook1y)
+
+## 🚀 About Me
+I'm a full stack developer...
+
+## What is the AI model
 It detects different types of cards with their symbols and numbers. It is a classification model that classifies cards using resnet 18. 
 
-![image](https://github.com/Kook1y/card_detection/assets/173178626/95462da2-328d-42fb-a1ed-005eab837f88)
+![image](https://github.com/Kook1y/card_detection/assets/173178626/600f9292-8b50-4edc-9a6f-a5c0a70bfbea)
+
 
 
 ## What is a Jetson Nano
 The NVIDIA Jetson Nano is a compact, powerful AI computer designed for developers, learners, and hobbyists to create and deploy AI applications at the edge. Here are the key features and functionalities of the Jetson Nano:
+
+![image](https://github.com/Kook1y/card_detection/assets/173178626/adee1f84-f868-489c-8ccb-60d11f2b5e60)
+
 
 ### Specifications
 - **CPU**: 64-bit quad-core ARM Cortex-A57 running at 1.43 GHz.
@@ -40,12 +55,7 @@ The NVIDIA Jetson Nano is a compact, powerful AI computer designed for developer
 
 In summary, the NVIDIA Jetson Nano is a versatile and powerful tool for AI and robotics development, offering a balance of performance, power efficiency, and affordability. It is particularly well-suited for those looking to explore AI applications without significant financial investment.
 
-Citations:
-[1] https://www.nvidia.com/en-au/autonomous-machines/embedded-systems/jetson-nano/
-[2] https://robu.in/what-is-jetson-nano/
-[3] https://en.wikipedia.org/wiki/Nvidia_Jetson
-[4] https://www.hackster.io/news/introducing-the-nvidia-jetson-nano-aaa9738ef3ff
-[5] https://visionplatform.ai/jetson-nano/
+
 
 ## The Algorithm
 
@@ -82,12 +92,7 @@ ResNet-18 has been successfully applied in various domains, including:
 
 In summary, ResNet-18 is a powerful and efficient model for image classification, leveraging residual learning to achieve high performance while mitigating common issues in deep neural networks.
 
-Citations:
-[1] https://www.kaggle.com/code/ggsri123/implementing-resnet18-for-image-classification
-[2] https://www.youtube.com/watch?v=mn5QDKQ54dQ
-[3] https://www.kaggle.com/code/ggsri123/implementing-resnet18-for-image-classification/code
-[4] https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/resnet-18-pytorch/README.md
-[5] https://www.mdpi.com/2072-4292/14/19/4883
+
 ---
 ## Running this project
 ### 1. Connect to your Nano in VS Code.
@@ -193,7 +198,7 @@ This tells you that the image was recognized successfully as a polar bear.
 ---
 ## How to Re-Train Image classification Model
 ```## Lesson Materials
-### Hardware Components
+Hardware Components
 
 Jetson Nano with SD Card Inserted
 Barrel Power Supply
@@ -203,42 +208,11 @@ Reliable Internet Connection
 ---
 ### Now that you know how to create your own code for running an image network, you are going to learn how to train a model. The first model that we'll be re-training is a simple model that recognizes two classes: cat or dog.
 
-![image](https://github.com/Kook1y/card_detection/assets/173178626/90fa0a4b-d68a-42d5-8b2c-edcf3b166e6a)
+![image](https://github.com/Kook1y/card_detection/assets/173178626/a96bb449-4704-4141-8f37-f2e8731fde06)
+![image](https://github.com/Kook1y/card_detection/assets/173178626/bb6f2caa-1210-4cd3-aabb-90989cc68dfd)
 
 
-Provided below is an 800MB dataset that includes 5000 training images, 1000 validation images, and 200 test images, each evenly split between the cat and dog classes. The set of training images is used for transfer learning, while the validation set is used to evaluate classification accuracy during training, and the test images are to be used by us after training is completed. The network is never directly trained on the validation and test sets, only the training set.
-
-The images from the dataset comprise of many different breeds of dogs and cats. This includes large felines like tigers and mountain lions since the number of cat images available was slightly lower than for dogs. Some images also picture humans, which the detector is trained to ignore as background and focus on the cat vs. dog content.
-
-Retraining a model with the nano is much more complicated than using a single image and can take awhile and up to several hours. It's recommended to leave this running at end of day or before a break. If you are pressed for time or do not wish to run your nano that long you can do this lesson in your browser under "Optional Alternative: Training Project in Browser" which will be much faster but not use VS Code.
-
-If you do want the model to run for not as long you can modify how many epochs by modifying the command as shown in the steps below.
-
-First, you'll download a dataset and then train the data. After that, you can test the re-trained model on a live camera feed or static images.
----
-
-## Training A Network
-First, you will obtain the data needed to train a network, then you will run the training script to train the network.
-
-### 1. Change directories into jetson-inference/python/training/classification/data
-
- 
-### 2. Run this command to download the dataset.  
-```wget https://nvidia.box.com/shared/static/o577zd8yp3lmxf5zhm38svrbrv45am3y.gz -O cat_dog.tar.gz```
-
-![image](https://github.com/Kook1y/card_detection/assets/173178626/aed49ad9-0e7b-4175-b784-5c3880f41bdb)
-
-
- 
-### 3. Run this command to unzip the file you downloaded. 
-```tar xvzf cat_dog.tar.gz```
-![image](https://github.com/Kook1y/card_detection/assets/173178626/9a61682b-fede-49f6-8e27-1323acc9079b)
-
-
-
-
- 
-### 4. cd back to nvidia/jetson-inference/
+### 1. cd back to nvidia/jetson-inference/
 
 You may get an error later saying you're out of memory. You can ensure your system overcommits memory which allows it to have more memory for the task by running this now. Run this in your terminal when you're in your jetson-inference directory:
  ```echo 1 | sudo tee /proc/sys/vm/overcommit_memory```
@@ -246,23 +220,23 @@ You may get an error later saying you're out of memory. You can ensure your syst
  
 
  
-### 5. Once that has run and you're still back in the jetson-inference folder, run 
+### 2. Once that has run and you're still back in the jetson-inference folder, run 
 ```./docker/run.sh to run the docker container.``` (You may have to re-enter your nvidia password at this step)
 
 ![image](https://github.com/Kook1y/card_detection/assets/173178626/f8a3112a-c01e-483b-9aa4-adc50bedaf62)
 
 
  
-### 6. From inside the Docker container, change directories so you are in _jetson-inference/python/training/classification__
+### 3. From inside the Docker container, change directories so you are in _jetson-inference/python/training/classification__
 
 ![image](https://github.com/Kook1y/card_detection/assets/173178626/bc3ff9c3-ff2e-4256-a73c-8b85fff2b6ca)
 
 
  
-### 7. Now you are ready to run your script.
+### 4. Now you are ready to run your script.
 
 Run the training script to re-train the network where the model-dir argument is where the model should be saved and where the data is. 
-```python3 train.py --model-dir=models/cat_dog data/cat_dog```
+```python3 train.py --model-dir=models/cards data/cards```
 
  
 
@@ -300,7 +274,7 @@ Pytorch comes with built-in support to do this, so follow these steps to export 
 
  
 ### 2. Run the onnx export script.
-```'python3 onnx_export.py --model-dir=models/cat_dog'```
+```'python3 onnx_export.py --model-dir=models/cards'```
 
  
 ### 3. Look in the jetson-inference/python/training/classification/models/cat_dog folder to see if there is a new model 
@@ -318,33 +292,47 @@ In order to see how your network functions you can run images through them. You 
 ### 2. On your nano, navigate to the 'jetson-inference/python/training/classification' directory.
 
  
-### 3. Use ```ls models/cat_dog/``` to make sure that the model is on the nano. You should see a file called resnet18.onnx.
+### 3. Use ```ls models/cards/``` to make sure that the model is on the nano. You should see a file called resnet18.onnx.
 
-![image](https://github.com/Kook1y/card_detection/assets/173178626/b20e057a-eb22-401c-87dd-d23801752af5)
+![image](https://github.com/Kook1y/card_detection/assets/173178626/f7d544b9-29b4-49f2-8118-44218821e8fd)
+
 
 
  
 ### 4. Set the NET and DATASET variables
-```NET=models/cat_dog```
-```DATASET=data/cat_dog```
+```NET=models/cards```
+```DATASET=data/cards```
 
  
 ### 5. Run this command to see how it operates on an image from the cat folder.
-```imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/cat/01.jpg cat.jpg```
+```imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/aceofclubs/1.jpg aoc.jpg```
 
  
 ### 6. Open VS Code to view the image output. 
 
-![image](https://github.com/Kook1y/card_detection/assets/173178626/1dc6a0cd-2811-4ca1-8f86-c4eb7f33a48d)
+![image](https://github.com/Kook1y/card_detection/assets/173178626/249fecee-ce42-4208-85c5-5617ea500499)
 
-
-![image](https://github.com/Kook1y/card_detection/assets/173178626/003c29f2-c1c3-481f-8efa-1ba7cc2b9320)
+![image](https://github.com/Kook1y/card_detection/assets/173178626/cb9fa386-d082-4798-884c-b976b6dc54d7)
 
 
  
-### 7. If you want to process all 200 test images, follow the instructions [hereLinks ](https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-cat-dog.md#processing-all-the-test-images)to an external site.. You can also run the network with live video. 
+### 7. If you want to process all 200 test images, follow the instructions [Click Here ](https://github.com/dusty-nv/jetson-inference/blob/master/docs/pytorch-cat-dog.md#processing-all-the-test-images)to an external site.. You can also run the network with live video. 
+
+
+## Acknowledgements
+- https://www.kaggle.com/code/ggsri123/implementing-resnet18-for-image-classification
+- https://www.youtube.com/watch?v=mn5QDKQ54dQ
+- https://www.kaggle.com/code/ggsri123/implementing-resnet18-for-image-classification/code
+- https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/resnet-18-pytorch/README.md
+- https://www.mdpi.com/2072-4292/14/19/4883
+- https://www.nvidia.com/en-au/autonomous-machines/embedded-systems/jetson-nano/
+- https://robu.in/what-is-jetson-nano/
+- https://en.wikipedia.org/wiki/Nvidia_Jetson
+- https://www.hackster.io/news/introducing-the-nvidia-jetson-nano-aaa9738ef3ff
+- https://visionplatform.ai/jetson-nano/
+## Badges
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 
 
-readme.md
-Displaying readme.md.
