@@ -11,7 +11,7 @@
 - [@Kook1y](https://github.com/Kook1y)
 
 ## 🚀 About Me
-I'm a full stack developer...
+I am a high school student in India who just entered 10th grade. I have an interest in AI models and machine as I always found it fascinating how the models worked. I have learnt a littlebit of python and machine learning. I have also created this model using resnet-18 pretrained on imagenet.
 
 ## What is the AI model
 It detects different types of cards with their symbols and numbers. It is a classification model that classifies cards using resnet 18. 
