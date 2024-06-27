@@ -11,7 +11,7 @@
 - [@Kook1y](https://github.com/Kook1y)
 
 ## 🚀 About Me
-I am a high school student in India who just entered 10th grade. I have an interest in AI models and machine as I always found it fascinating how the models worked. I have learnt a littlebit of python and machine learning. I have also created this model using resnet-18 pretrained on imagenet.
+I am a high school student in India who just entered 10th grade. I have an interest in AI models and machine learning as I always found it fascinating, how the models worked. I have learnt a little bit of python and machine learning before this project. I have also created this model using resnet-18 pretrained on imagenet.
 
 ## What is the AI model
 It detects different types of cards with their symbols and numbers. It is a classification model that classifies cards using resnet 18. 
@@ -221,7 +221,7 @@ You may get an error later saying you're out of memory. You can ensure your syst
 
  
 ### 2. Once that has run and you're still back in the jetson-inference folder, run 
-```./docker/run.sh to run the docker container.``` (You may have to re-enter your nvidia password at this step)
+```./docker/run.sh``` to run the docker container. (You may have to re-enter your nvidia password at this step)
 
 ![image](https://github.com/Kook1y/card_detection/assets/173178626/f8a3112a-c01e-483b-9aa4-adc50bedaf62)
 
