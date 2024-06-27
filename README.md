@@ -312,7 +312,8 @@ In order to see how your network functions you can run images through them. You 
 
 ![image](https://github.com/Kook1y/card_detection/assets/173178626/249fecee-ce42-4208-85c5-5617ea500499)
 
-![image](https://github.com/Kook1y/card_detection/assets/173178626/cb9fa386-d082-4798-884c-b976b6dc54d7)
+![image](https://github.com/Kook1y/card_detection/assets/173178626/f3af43d7-e544-4542-98fb-11232673f498)
+
 
 
  
