@@ -335,5 +335,5 @@ In order to see how your network functions you can run images through them. You 
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-
+Video Link: https://www.youtube.com/watch?v=Lr3nCTV1hMQ 
 
